@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ASPM - Contact us</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        
+<!------- google fonts ------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+       
+         <header> 
+       <nav class="nav1">
+               <a href="../index.html"><!-- In case we want a logo here <img src="#" alt="aspm_logo">--><h1>ASPM</h1><p class="seeIt">San Diego</p></a>
+                <a href="#"><img src="../images/hamburger.png" alt="hamburger icon"></a>
+               <ul>
+               <li><a href="#">About Us</a></li>
+               <li><a href="pages/services.html">Services</a></li>
+               <li><a href="pages/homeowner.html">Homeowners</a></li>
+               <li><a href="pages/contact.html">Contact Us</a></li>
+                <li><a href="#">Register</a></li>
+               </ul>
+           <a href="tel:8584305700" class="button">Call 24/7 (858) 430 5700</a>
+       </nav>
+           <hgroup>
+               <h1>ASPM Contact Us</h1>
+               <p>Property Management Experts</p>
+           </hgroup>
+       </header>       
+       
+       <main class="mainC">
+        <section class="officeInfo">
+           <ul>
+               <li>Office: Hours: 8 am to 6 pm Monday - Friday</li>
+               <li>9 am to 2 pm Saturday & Sunday</li>
+               <li><p>Closed on Holidays</p></li>
+               <!--<p></p>-->
+               <li>4079 Goveernor Drive, Suite 700</li>
+               <li>San Diego, CA 92122-2522</li>
+               <li><p> </p></li>
+                <li>info@aspm-sd.com</li>
+                <li>Call Us 24/7 help desk (858) 430 5700</li>
+            </ul>
+        </section>
+        
+         <form action="#" method="post" id="mainContactForm" enctype="text/plain">
+            <fieldset class="contactUs">
+                <legend>Contact Us</legend>
+                    <p>Select your topic.</p>
+                <select id="topic" name="topic">
+                    <option value="">Select one</option>
+                    <option value="p">Payment</option>
+                    <option value="m">Maintenance</option>
+                    <option value="s">Security</option>
+                    <option value="o">Other</option>
+                </select>
+                    <p>Please enter your message.  We will respond within 48 hours. In case of an urgent matter, please call our 24/7 line (858) 430 5700</p> 
+
+                <textarea id="message" name="message"></textarea> 
+                <ul>
+                     <li>
+                         <label for="name">Name:</label>
+                         <input type="text" id="name" name="name" required></li>
+                     <li>
+                         <label for="email">Email:</label>
+                         
+                         <input type="email" id="email" name="email" required></li>
+                     <li>
+                         <label for="phone">Phone:</label>
+                         <input type="tel" id="phone" name="phone" placeholder="888 123-4567"></li>      
+                </ul>
+                   
+                
+                <input id="submit" class="buttonC" type="submit" value="Send">  
+                          
+            </fieldset>        
+            
+            <fieldset class="create">
+                 <legend>Create your sign in.</legend>
+                 <ul>
+                     <li>
+                         <label for="fName">First name:</label>
+                         <input type="text" id="fName" name="first_name" required>
+                         </li>
+                     <li>
+                         <label for="lName">Last name:</label>
+                         <input type="text" id="lName" name="last_name" required></li>
+                     <li>
+                         <label for="email1">Email:</label>
+                         
+                         <input type="email" id="email1" name="email1" required></li>
+                     <li>
+                         <label for="phone1">Phone:</label>
+                         <input type="tel" id="phone1" name="phone1" placeholder="888 123-4567"></li>
+                 </ul>
+             </fieldset>
+             
+            
+            <fieldset class="inquiry">
+               <legend>Your residence</legend>  
+               <!--ul.choices>li*4>input[type=checkbox]+label-->
+               <ul class="choices">
+                   <li>
+                   <input type="radio" name="residence" id="dHills" value="dHills">
+                   <label for="dHills">Desert Hills</label>
+                   </li>
+                   
+                   <li>
+                   <input type="radio" name="residence" id="oVillage" value="oVillage">
+                   <label for="oVillage">Ocean Village </label>
+                   </li>
+                   
+                   <li>
+                   <input type="radio" name="residence" id="skyLine" value="skyLine">
+                   <label for="skyLine">Skyline Condo</label>
+                   </li>
+                   
+                   <li>
+                   <input type="radio" name="residence" id="wSuburbs" value="wSuburbs">
+                   <label for="wSuburbs">Western Suburbs</label>
+                   </li>
+                   
+               </ul>
+           </fieldset>   
+             <input type="submit" id="submit1" value="Submit" class="buttonCD">
+           </form>
+          
+          </main>
+
+       <footer>
+           <p>4079 Governor Drive, Suite 700</p>
+           <p>San Diego, CA 92122-2522</p>
+           <p>info@aspm-sd.com</p>
+           <p>CA Contractors Lic. No.805228</p>
+           <p>&copy;2022 ASPM San Diego. All rights reserved.</p>
+       </footer>
+       
+    </body>
+    
+</html>
+
+

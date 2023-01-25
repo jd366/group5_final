@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ASPM - Register to enroll</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        
+<!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+    
+     <header> 
+       <nav class="nav1">
+               <a href="../index.html"><!-- In case we want a logo here <img src="#" alt="aspm_logo">--><h1>ASPM</h1><p class="seeIt">San Diego</p></a>
+                <a href="#"><img src="../images/hamburger.png" alt="hamburger icon"></a>
+               <ul>
+               <li><a href="#">About Us</a></li>
+               <li><a href="pages/services.html">Services</a></li>
+               <li><a href="pages/homeowner.html">Homeowners</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="#">Register</a></li>
+     
+                         </ul>
+           <a href="tel:8584305700" class="button">Call 24/7 (858) 430 5700</a>
+       </nav>
+           <hgroup>
+               <h1>ASPM Register</h1>
+               <p>Property Management Experts</p>
+           </hgroup>
+       </header> 
+                    
+       <main>
+        <section class="registerToday">
+         <h1>Register today online!</h1>
+         <h2>HOA Automatic Payment Enrollment</h2>
+         <p></p>
+         <p>Flexible payment options. Choose from one of the following:</p>
+           <ul class="top" style="list-style-type:none"> 
+               <li>Bank acccount (checking or savings)</li>
+               <li><hr></li>
+               <li>Credit/Debit/ATM cards</li>
+               <li><hr></li>
+               <li>Mail in</li>
+            </ul>
+        </section>
+        
+         <form action="#" method="post" id="registerForm" enctype="text/plain">
+                            
+            <fieldset class="bank">
+                <legend> Register to enroll - Bank account</legend>
+                   <p style="margin-left: 0;">Select bank account type</p>
+                <select id="bankAccount1" name="bank_account1">
+                    <option value="">Select one</option>
+                    <option value="c">Checking</option>
+                    <option value="s">Saving</option>
+                </select>
+               
+                <ul>
+                     <li>
+                         <label for="BKname">Bank name:</label>
+                         <input type="text" id="BKname" name="BKname" required></li>
+                     <li>
+                         <label for="name">Name of account holder:</label>
+                         <input type="text" id="name" name="name" required></li>
+                     <li>
+                         <label for="routing">Routing number (9 digit):</label>
+                         <input type="text" id="routing" name="routing" placeholder="000000000" required></li>      
+                    <li>
+                         <label for="accountNumber">Bank account number:</label>
+                         <input type="text" id="accountNumber" name="accountNumber" required></li>   
+                    <li>
+                         <label for="email1">Enrollment confirmation email address:</label>
+                         <input type="email" id="email1" name="email" required></li>  
+                </ul>
+                <input id="submit1" class="button" type="submit" value="Submit">                     
+            </fieldset>        
+            
+            <fieldset class="credit">
+                 <legend>Register to enroll - Credit/Debit/ATM Cards</legend>
+                      <p>Select card type</p>
+                    <select id="bankAccount2" name="bank_account2">
+                        <option value="">Select one</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="VISA">VISA</option>
+                        <option value="AMEX">AMEX</option>
+                        <option value="Discove">Discover</option>        
+                    </select>
+                 <ul>
+                     <li>
+                         <label for="cardholder">Cardholder Name as shown on card:</label>
+                         <input type="text" id="cardholder" name="cardholder" required>
+                         </li>
+                     
+                     <li>
+                         <label for="cardNumber">Card number:</label>
+                         <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" required></li>
+                     <li>
+                         <label for="securityCode">Security code:</label>
+                         <input type="text" id="securityCode" name="securityCode" placeholder="000" required></li>
+                     <li>
+                         <label for="expDate">Expiration Date:</label>                    
+                         <input type="text" id="expDate" name="expDate" placeholder="mm/yy" required></li>
+                     <li>
+                         <label for="zip">Zip code from billing address:</label>
+                         <input type="text" id="zip" name="zip" placeholder="00000" required></li>
+                         
+                     <li>
+                         <label for="email2">Enrollment confirmation email address:</label>
+                         <input type="email" id="email2" name="email" required></li>  
+                 </ul>
+                 
+                       <input id="submit2" class="button" type="submit" value="Submit">  
+             </fieldset>
+             
+             <fieldset class="mailin">
+                <legend>Mail in</legend>
+                <p>If you prefer not to enroll in automatic payment, here is the instruction for mail in.</p>
+                <p>Make your check payable to<span> ASPM HOA </span>, fill out your residence name and unit number on your check and mail to:</p>
+                       <p><span>ASPM HOA Management</span> </p>
+                       <p><span> 4079 Goveernor Drive, Suite 700, San Diego, CA 92122-2522</span></p>                             
+            </fieldset>  
+           </form>
+          
+          </main>
+
+         <footer>
+           <p>4079 Governor Drive, Suite 700</p>
+           <p>San Diego, CA 92122-2522</p>
+           <p>info@aspm-sd.com</p>
+           <p>CA Contractors Lic. No.805228</p>
+           <p>&copy;2022 ASPM San Diego. All rights reserved.</p>
+       </footer>
+       
+       
+     </body>
+    
+</html>
+
+

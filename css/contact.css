@@ -1,0 +1,270 @@
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Source Serif Pro', serif;
+*/
+
+
+/* -------- Generic styles --------- */
+html {
+    font-size: 10px;
+}
+body {
+/*   font-family: 'Source Serif Pro', serif; */
+    font: 300 1.7rem/1.5 'Source Serif Pro', serif;
+}
+h1 {
+/*
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+*/
+    font: 500 4rem/1 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font: 300 3rem/1 'Fira Sans', sans-serif;
+}
+
+p {
+    margin-bottom: 2rem
+}
+
+a {
+    font-weight: 400;
+    color: white;
+    padding-left: 1rem;
+}
+
+a:hover {
+    color: #ad551a
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------- header --------- */
+header {
+    background-color: #324958;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 4rem
+}
+header p {
+    font-size: 1.3rem;
+    line-height: 2.1;
+    margin-bottom: 0;
+}
+header img {
+    max-width: 60px;
+}
+
+hgroup {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* -------- main section --------- */
+
+main {
+    margin: 0.5em;
+}
+
+section.officeInfo {
+    background-color: gainsboro;
+    padding: 20px;
+    
+}
+
+.button {
+    text-decoration: none;
+    background-color: white;
+    border: solid 1px #000;
+    border-radius: 12px;
+    padding: 5px 15px;
+    text-shadow: none;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+/* --------- main form ------------*/
+fieldset {
+    border: solid 1px #ccc;
+    padding: 1em;
+    margin: .75em 0;
+}
+
+legend {
+    padding: 0 .5em;
+    font-style: italic;
+    font-weight: 700;
+    color: #000;
+}
+
+form h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+label {
+    color: #000;
+    margin: .5em 0 0;
+    display: block;
+}
+
+input {
+    padding: .25em;
+    margin-bottom: .25em;
+    color: #000;
+}
+
+.choices label {
+    display: inline-block;   
+}
+
+::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+select {
+    color: #999;
+    font-size: 1rem;
+    margin: 0 0 .5em;
+}
+
+textarea {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.7rem;
+    color: #000;
+    margin: 0 0 1em;
+    padding: .25em;
+    width: 90%;
+}
+
+
+/* --------- footer ------------*/
+footer {
+    background-color: #324958;
+    padding: 1em;
+}
+
+.copy {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+    
+/* --------- Media Query 600px ------------*/
+@media screen and (min-width:600px){
+    
+    img {
+        display: none;
+    }
+    
+    nav {
+        visibility: visible;
+        background-color: #324958;
+    }
+    
+    nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+    
+    nav a {
+        text-decoration: none;
+    }
+    
+    header#hero {
+        padding-left: 25%;
+        text-align: right;
+        
+    }
+    
+    main h1, main img {
+        text-align: center;
+        display: block;
+        margin: 0 auto .5em;
+    }
+    
+    .button {
+        align-self: flex-end;
+    }
+}
+
+/* --------- Media Query 800px ------------*/
+
+@media screen and (min-width:800px) {
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    
+    main section, main h1 {
+        grid-column: 1/-1;
+        
+    }
+    
+}
+
+/* --------- Media Query 1000px ------------*/
+@media screen and (min-width:1000px) {
+   
+    nav ul {
+        grid-template-columns: repeat(1fr, 1fr);
+        
+    }    
+    
+    main {
+        grid-template-columns: repeat(1fr, 1fr); 
+    }
+    
+   main section {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-top: none;
+        padding-top: 0;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        
+    }
+    
+ section.officeInfo {
+    background-color: gainsboro;
+    margin: 2rem 2rem 5rem;
+    
+    }
+}
+    
+/* --------- Media Query 1500px ------------*/
+
+@media screen and (min-width: 1500px){
+    header {
+        max-width: 1500px;
+        margin: auto;
+    }
+    
+}
+

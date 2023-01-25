@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service page</title>
+    <link href="../css/reset.css" rel="stylesheet">
+        <!-- -----google font------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="../css/stylesheet.css" rel="stylesheet">
+     <!-----jquery for dropdown menu------>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+       <script>
+        $(document).ready(function()
+        {
+            $(".main_service li").hover(function()
+            {
+            $("ul.sub_service",this).slideDown(300);
+          },
+       function(){
+           $("ul.sub_service",this).slideUp(300);
+            });
+           });
+    </script>
+        <!--------jquery end------->
+   
+        <header> 
+       <nav class="nav1">
+                <a href="../index.html">
+                <h1>ASPM</h1>
+                <p class="seeIt">San Diego</p></a>
+
+                <ul class="main_service">
+                 <li>
+                     <a href="#">Login</a>
+                 <ul class="sub_service">
+                        <li><a href="login.html">Login form</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="#">Menu</a>
+                 <ul class="sub_service">
+                 <li><a href="homeowner.html"> Homeowners</a></li>
+                 </ul>
+                </li>
+            
+            <li>
+               <a href="#">Service</a>
+                  <ul class="sub_service">
+                       <li ><a href="#">Financial</a></li>
+                       <li><a href="#" >Managemnet</a></li>
+                       <li><a href="#">Maintainance</a></li>
+                       <li><a href="#">Janitorial</a></li>
+                       <li><a href="#">Contruction</a>
+                       </li>
+                  </ul>
+                 
+            <li>
+                 <a href="#">Request</a>
+                 <ul class="sub_service">
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </li>
+           <a href="tel:8584305700" class="button">Call 24/7 (858) 430 5700</a>
+           </ul>
+       </nav>
+           <hgroup>
+               <h1>Welcome to ASPM</h1>
+               <p>Services</p>
+           </hgroup>
+       </header>
+       <main>
+        <section>
+            <article class="mid-service">
+        <h1>Choose the Best Management Service Provider</h1>
+        <p>Choosing an HOA Management service provider that is in sync with an HOA Board’s philosophy is critical in achieving the HOA’s goals. Serving on an HOA Board is a thankless position that can often be frustrating and filled with strife and conflict. It’s important that the Board choose an agent that has the industry experience, resources, and strong customer focus to provide the support and guidance Boards and community residents must be able to rely on.</p>
+        </article>
+        </section>
+        <!---first heading---->
+         <section class="middleS">
+            <article class="mid-service">
+              <h2>Management</h2>
+              <a href="#"><img src="../images/ASPM_mgmt.png" alt="HOA management">
+               <h3>Learn More</h3></a>
+              <p>
+        When it comes to San Diego Property Management, no one beats ASPM-SanDiego. Our accredited, experienced community managers bring a powerful combination of wide-ranging resources and individual focus to homeowner association management.
+       </p>
+       </article>
+   
+<!---second heading-----> 
+    <article class="mid-service">
+            
+            <h2>Finanacial </h2>
+            <a href="#"><img src="../images/management.jpeg" alt="HOA financial">
+                <h3>Learn More</h3></a>
+                <p>We have the experience, skill, and technologies you’re looking for to provide Boards with real-time, cloud-based digital reporting of all HOA Business and management activity. Homeowners enjoy instant, secure portal access to manage their personal account.
+            </p>
+            </article>
+         
+ <!---third heading---->
+    <article class="mid-service">
+           
+            <h2>Maintenance </h2>
+           <a href="#"><img src="../images/ASPM_maintenance.png" alt="HOA Maintenance">
+                <h3>Learn More</h3></a>
+                <p>Contractual and ‘as needed’ work is tracked
+                    through our work order system with detailed
+                    reporting of status and completion.</p>
+
+</article>
+           
+         
+  
+        <!---fourth heading----->
+            <article class="mid-service">
+        <h2>Janitorial</h2>
+       <a href="#"><img src="../images/janitorial.png" alt="HOA Janitorial">
+            <h3>Learn More</h3></a> 
+       <p>Contractual and ‘as needed’ cleaning services
+are tracked through our work order system
+with detailed reporting of status and
+completion.</p>
+    </article>
+<!---fifth heading---->
+    <article class="mid-service">
+        <h2>Construction Management</h2>
+<a href="#"><img src="../images/construction.jpeg" alt="HOA construction">
+            <h3>Learn More</h3></a>
+        <p>Administrative management service
+            and oversight of multi-million dollar
+            community construction projects by
+            our licensed General Contractor.</p>
+    </article>
+
+      </section>
+    </main>
+   
+    <footer>
+        
+           <p>4079 Governor Drive, Suite 700</p>
+           <p>San Diego, CA 92122-2522</p>
+           <p>info@aspm-sd.com</p>
+           <p>CA Contractors Lic. No.805228</p>
+           <p>&copy;2022 ASPM San Diego. All rights reserved.</p>
+       </footer>
+       
+   
+</body>
+</html>
